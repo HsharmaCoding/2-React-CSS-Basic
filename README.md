@@ -1,0 +1,40 @@
+
+> Styling React Components 
+    1. CSS Stylesheet Regular css stylesheet
+    2. Inline Styling
+    3. CSS Modules 
+    4. CSS in js Libraries  (Styled Components)
+
+1. CSS Stylesheet (Regular css stylesheet)
+    > src/Components/Stylesheet.tsx 
+    > src/myStyle.css
+    > CSS file has been imported to the Stylesheet.tsx 
+    > Stylesheet Component has been calling from the App.tsx
+        > Applied primay class without condtions.
+        > Applied promary class with props conditionally. props has been passing from the App.tsx
+    > If we want to apply multiple class then we have to use the template litterals.
+        >  <h1 className={`${className} font-xl`}>Multiple Class</h1>
+
+2. Inline Styling
+    > Style name should be in camel case version. (Example: fontSize)
+    > src/Components/Inline.tsx
+    > Inline.tsx component has been used in the App.tsx
+
+3. CSS Modules (Available to react version 2.00 or higher)
+    > There are some file naming convenstions for CSS Modules.
+    > File name must be suffix with .module.css
+    > For example create a two style sheet.
+        > src/applyStyle.css (Regular Stylesheet) 
+        > src/applyStyle.module.css (CSS Modules)
+    > Import regular style sheet in App.tsx 
+        > import '../src/applyStyle.css';;
+    > Import CSS Modules style sheet in App.tsx 
+        > import styles from '../src/applyStyle.module.css';
+    > CSS Modules classes are locally scoped. We can not use the same class in child component.
+      This classes are bind with styles attribues, Means we can access the classes after importing the styles attribute. 
+        > For Example:
+        > We have imported applyStyle.css file in parent component (App.tsx). So all the child
+          component can access the classes of applyStyle.css
+        > Similar we have imported applyStyle.module.css file in parent component (App.tsx). But
+          We can not use it's classes in child component, because to use module.css we have to 
+          import styles attribute then we can access it's classes.
