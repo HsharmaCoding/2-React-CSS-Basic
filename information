@@ -3,8 +3,9 @@
     1. CSS Stylesheet Regular css stylesheet
     2. Inline Styling
     3. CSS Modules 
-    4. CSS in js Libraries  (Styled Components)
-> Here we will cover only first three approaches.
+    4. Styled Components (CSS using Libraries)
+        > Install the package: npm install --save styled-components    
+        > For Typescript: npm i --save-dev @types/styled-components
 
 1. CSS Stylesheet (Regular css stylesheet)
     > src/Components/Stylesheet.tsx 
@@ -39,6 +40,10 @@
         > Similar we have imported applyStyle.module.css file in parent component (App.tsx). But
           We can not use it's classes in child component, because to use module.css we have to 
           import styles attribute then we can access it's classes.
+
+4. Styled Components
+    > Components/StyledComponent.tsx file has been created to utilize the styled component
+      styling. This file has been calling from the App.tsx. 
              
         
         
