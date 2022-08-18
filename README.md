@@ -4,4 +4,4 @@
     2. Inline Styling
     3. CSS Modules 
     4. Styled Components (CSS using Libraries)
-# Please refer the attached information.txt file for more information.
+# Please refer the attached information.txt and APP-DEMO file for more information.
